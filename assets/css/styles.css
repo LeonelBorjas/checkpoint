@@ -1,0 +1,220 @@
+/* normalizado de css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --color1: #3F51B5;
+    --color2: rgb(197, 195, 230);
+    --color3: white;
+    --color4: black;
+}
+/* header */
+.img--size{
+    width: 4%;
+}
+
+.img-star{
+    display: flex;
+    justify-content: start;
+    width: 70%;
+}
+.img-left{
+    display: flex;
+    justify-content: end;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+    border-top: 1px solid var(--color1);
+    border-bottom: 1px solid var(--color1);
+    padding: 10px 0;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    box-shadow: 2px 2px 0 var(--color1);
+    border-radius: 5px;
+    padding: 3px 4px;
+}
+/* main */
+
+main{
+    background-image: url(../img/fondo.webp)
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.center{
+    text-align: center;
+}
+
+
+h3{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border-radius: 10px 10px 10px 10px black;
+    
+}
+.card--style{
+    background-color: var(--color2)
+}
+
+.container--list-table{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-left: 3.5rem;
+    margin-bottom: 1rem;
+}
+.img--size-main{
+    width: 100%;
+    border-radius: 10px;
+}
+table{
+    background-color: var(--color2);
+}
+
+
+ul {
+    list-style: disc;
+    margin-bottom: 1rem;
+    background-color: var(--color2);
+}
+
+th,td {
+    outline: 1px solid black;
+    padding: .2rem;
+    text-align: center;
+}
+
+.article--img{
+    display: flex;
+
+}
+
+/* footer */
+footer {
+    background-color: var(--color4);
+    font-size: 0.7rem;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 2px;
+}
+
+@media screen and (min-width: 768px){
+    .header-center{
+        margin-top: 1rem;
+        text-align: center;
+    }
+    .card {
+        margin-top: 1rem;
+        margin-left: 17rem;
+        margin-bottom: 30px;
+        width: 32%;
+        border-radius: 30px 30px 30px 30px;
+        box-shadow: 0px 1px 24px -7px rgba(0, 0, 0, 0.7);
+    }
+    .container--list-table{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 18rem;
+        margin-bottom: 1rem;
+        width: 50%;
+        align-items: center;
+    }
+
+    footer {
+        background-color: var(--color4);
+        font-size: 0.5rem;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 2px;
+    }
+    h2{
+        text-align: center;
+    }
+    h3{
+        margin-top: 1rem;
+    }
+    .card h5{
+        text-align: center;
+    }
+    .card--style{
+        padding: 10px;
+    }
+}
+@media screen and (min-width: 1024px){
+    nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5rem;
+        border-top: 1px solid var(--color1);
+        border-bottom: 1px solid var(--color1);
+        padding: 10px 0;
+    }
+    
+    .card {
+        display: flex;
+        flex-wrap: wrap;
+        width: 10%;
+        border-radius: 30px 30px 30px 30px;
+        box-shadow: 0px 1px 24px -7px rgba(0, 0, 0, 0.7);
+    }
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center
+    }
+    h3{
+        font-size: 1rem;
+    }
+    main{
+        background-image: url(../img/fondo.webp);
+        background-size: cover;
+    }
+    footer {
+        background-color: var(--color4);
+        font-size: 0.6rem;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 2px;
+    }
+    h1{
+        font-size: 2.7rem;
+    }
+}
